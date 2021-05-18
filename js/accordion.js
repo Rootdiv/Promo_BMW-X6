@@ -8,10 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     featureLinkElems.forEach((featureLinkElem, i) => {
       if (index === i) {
         featureLinkElem.classList.add('feature__link_active');
-        featureLinkElem.nextElementSibling.classList.remove('hidden');
       } else {
         featureLinkElem.classList.remove('feature__link_active');
-        featureLinkElem.nextElementSibling.classList.add('hidden');
+      }
+    });
+    featureSubElems.forEach((featureSubElem, i) => {
+      if (index === i) {
+        featureSubElem.classList.remove('hidden');
+      } else {
+        featureSubElem.classList.add('hidden');
       }
     });
   };
