@@ -11,8 +11,10 @@ export default function modal() {
   const modalElem = document.querySelector('.modal');
 
   const openModal = (target) => {
-    if (target.classList.contains('more')) modalElem.classList.remove('hidden');
-    disableScroll();
+    if (target.classList.contains('more')) {
+      modalElem.classList.remove('hidden');
+      disableScroll();
+    }
   };
 
   const closeModal = () => {
