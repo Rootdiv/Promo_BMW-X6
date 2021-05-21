@@ -3,9 +3,9 @@ const smoothScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"
 
 const SPEED = 1;
 const scrolled = event => {
-  event.preventDefault();
   const target = event.target;
   if (target.matches('[href^="#"]')) {
+    event.preventDefault();
     let start = 0;
     const pageY = window.pageYOffset;
     const hash = target.getAttribute('href');
