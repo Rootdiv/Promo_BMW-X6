@@ -20,3 +20,8 @@ const enableScroll = () => {
     top: document.body.dataset.scrollY
   });
 };
+
+export default {
+  disableScroll,
+  enableScroll
+};

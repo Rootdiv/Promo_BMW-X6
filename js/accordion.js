@@ -1,5 +1,5 @@
 'use strict';
-document.addEventListener('DOMContentLoaded', () => {
+export default () => {
   const featureElem = document.querySelector('.feature-list');
   const featureLinkElems = document.querySelectorAll('.feature__link');
   const featureSubElems = document.querySelectorAll('.feature-sub');
@@ -32,4 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
+};
