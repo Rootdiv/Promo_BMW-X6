@@ -39,7 +39,7 @@ const formHandler = (form) => {
       }, 5000);
     };
     const smallElem = document.createElement('small');
-    if (data.name.trim() !== '' && data.email.trim() !== '') {
+    if (data.name.trim() !== '' && data.mail.trim() !== '') {
       sendData(JSON.stringify(data),
         (id) => {
           smallElem.innerHTML = 'Ваша заявка №' + id + '! <br> В ближайшее время c вами свяжемся';
