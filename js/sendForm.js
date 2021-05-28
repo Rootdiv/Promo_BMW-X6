@@ -31,13 +31,13 @@ const formHandler = (form) => {
         data[name] = value;
       }
     }
+    const smallElem = document.createElement('small');
     const notifyElem = () => {
       setTimeout(() => {
         smallElem.remove();
         formBtn.disabled = false;
       }, 5000);
     };
-    const smallElem = document.createElement('small');
     if (data.name.trim() !== '' && data.mail.trim() !== '') {
       sendData(JSON.stringify(data),
         (id) => {
