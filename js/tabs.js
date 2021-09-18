@@ -1,5 +1,5 @@
-'use strict';
-export default function tabs() {
+{
+  'use strict';
   const tabsHandlerElems = document.querySelectorAll('[data-tabs-handler]');
   const tabsFieldElems = document.querySelectorAll('[data-tabs-field]');
 
